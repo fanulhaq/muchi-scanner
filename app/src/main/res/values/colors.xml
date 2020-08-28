@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#444E78</color>
+    <color name="colorPrimaryDark">#444E78</color>
+    <color name="colorAccent">#E5E5E5</color>
+
+    <color name="textColorPrimary">#263238</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorHint">#A8ADAF</color>
+    <color name="textColorTab">#D3DCE6</color>
+    <color name="textColorBlack">#263238</color>
+
+    <!--Content Color-->
+    <color name="transparant">#00000000</color>
+    <color name="backgroundColorPrimary">#FFFFFF</color>
+    <color name="Red">#FA4A4A</color>
+    <color name="Blue">#338BFA</color>
+    <color name="Green">#15BA5B</color>
+    <color name="rippleColorDefault">#D3DCE6</color>
+    <color name="backgroundCard">#FFFFFF</color>
+    <color name="colorLine">#E9EEF3</color>
+    <color name="backgroundSearch">#E9EEF3</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - Irfanul Haq
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="@dimen/pm_xxsmall"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/ripple_img_toolbar"
+            android:src="@drawable/ic_clear"/>
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img_search_file"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pm_medium"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pm_small">
+                <Button
+                    android:id="@+id/btnKamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ripple_btn_true"
+                    android:textColor="@color/Green"
+                    android:fontFamily="@font/notosans_semi_bold"
+                    android:textSize="@dimen/font_large"
+                    android:text="@string/kamera"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/pm_small">
+                <Button
+                    android:id="@+id/btnGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ripple_btn_true"
+                    android:textColor="@color/Green"
+                    android:fontFamily="@font/notosans_semi_bold"
+                    android:textSize="@dimen/font_large"
+                    android:text="@string/gallery"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_btn_false"
+            android:textColor="@color/Red"
+            android:fontFamily="@font/notosans_semi_bold"
+            android:textSize="@dimen/font_large"
+            android:text="@string/batal"
+            android:layout_marginTop="@dimen/pm_medium"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

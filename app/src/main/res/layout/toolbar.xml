@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_default">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorWhite"
+            android:layout_marginStart="@dimen/pm_medium"
+            android:textSize="@dimen/font_xlarge"
+            android:fontFamily="@font/notosans_medium"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/pm_xxsmall"
+            android:background="@drawable/ripple_img_toolbar"
+            android:layout_marginEnd="@dimen/pm_medium"
+            android:src="@drawable/ic_cloud_download"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

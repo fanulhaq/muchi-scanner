@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/backgroundColorPrimary">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pm_medium"
+        android:src="@drawable/img_docs"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/img_docs" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/pm_medium"
+        android:layout_marginBottom="@dimen/pm_large"
+        android:backgroundTint="@color/colorPrimary"
+        android:tint="@color/backgroundColorPrimary"
+        android:src="@drawable/ic_camera" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/colorPrimary"
+        tools:ignore="UnusedAttribute"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

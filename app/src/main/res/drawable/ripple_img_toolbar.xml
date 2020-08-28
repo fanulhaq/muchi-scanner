@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 - Irfanul Haq
+  -->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/rippleColorDefault"
+    tools:targetApi="lollipop">
+    <item android:id="@android:id/mask"
+        tools:targetApi="lollipop">
+        <shape android:shape="oval">
+            <solid android:color="@color/rippleColorDefault" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background">
+        <shape android:shape="oval">
+            <solid android:color="@color/transparant" />
+        </shape>
+    </item>
+</ripple>

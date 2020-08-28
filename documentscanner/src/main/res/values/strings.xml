@@ -1,0 +1,17 @@
+<!--
+  ~ /**
+  ~  * Created by Ali YÜCE on 3/2/20 11:18 PM
+  ~  * https://github.com/mayuce/
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 3/2/20 11:09 PM
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">DocumentScanner</string>
+
+    <string name="done">Selesai</string>
+    <string name="cancel">Batal</string>
+    <string name="image_error">Tidak ada gambar yang dipilih, harap coba lagi.</string>
+    <string name="crop_error">Anda belum memilih bidang yang valid. Harap lakukan koreksi sampai garis menjadi biru.</string>
+</resources>
